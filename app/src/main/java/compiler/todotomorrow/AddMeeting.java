@@ -64,12 +64,12 @@ public class AddMeeting extends AppCompatActivity {
         meetingAddress = meetingAddressEt.getText().toString();
         meetingDescription = meetingDescriptionEt.getText().toString();
 //        meeting_priority
-        addToMeetingModel = new MeetingModel(meetingTitle,meetingAddress,meeting_startDate,meeting_startTime,meeting_priority,meetingDescription);
+        addToMeetingModel = new MeetingModel(meetingTitle, meetingAddress, meeting_startDate, meeting_startTime, meeting_priority, meetingDescription);
         meetingDatabaseSource = new MeetingDatabaseSource(this);
         boolean meetingAddStatus = meetingDatabaseSource.addMeeting(addToMeetingModel);
-        if (meetingAddStatus==true){
+        if (meetingAddStatus == true) {
             Toast.makeText(AddMeeting.this, "Meeting added successfully", Toast.LENGTH_SHORT).show();
-            Intent mainActivity = new Intent(getBaseContext(),MainActivity.class);
+            Intent mainActivity = new Intent(getBaseContext(), MainActivity.class);
             startActivity(mainActivity);
         } else {
             Toast.makeText(AddMeeting.this, "Meeting failed", Toast.LENGTH_SHORT).show();
@@ -88,7 +88,7 @@ public class AddMeeting extends AppCompatActivity {
         pickDateCalendar = Calendar.getInstance();
 //        Date date = pickDateCalendar.getTime();
         int year = pickDateCalendar.get(Calendar.YEAR);
-        int month = pickDateCalendar.get(Calendar.MONTH);
+        int month = pickDateCalendar.get(Calendar.MONTH)+1;
         int day = pickDateCalendar.get(Calendar.DAY_OF_MONTH);
         DatePickerDialog mPickerDialog;
         mPickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
@@ -96,7 +96,7 @@ public class AddMeeting extends AppCompatActivity {
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                 meetingDateEt.setText(dayOfMonth + ":" + monthOfYear + ":" + year);
             }
-        }, day, month, year);
+        }, year,month,day);
         mPickerDialog.setTitle("Select Meeting Start Date");
         mPickerDialog.show();
     }

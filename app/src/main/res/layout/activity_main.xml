@@ -6,11 +6,6 @@
     android:layout_height="match_parent"
     tools:context="compiler.todotomorrow.MainActivity">
 
-    <ScrollView
-        android:visibility="visible"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -29,21 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <TextView
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Tomorrow"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textStyle="bold" />
-
-            <ListView
-                android:id="@+id/list_tomorrow"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-    </ScrollView>
+      </LinearLayout>
 
 <ImageButton
     android:id="@+id/add_meeting_btn"
