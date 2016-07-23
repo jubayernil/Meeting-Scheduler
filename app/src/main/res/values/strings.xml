@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">ToDoTomorrow</string>
+    <string name="label_testinghtmltags"><u>This text has an underscore</u></string>
+    <string name="your_string_here">This is an <u>underline</u>.</string>
+    <string name="meeting_name">Meeting name :</string>
+    <string name="meet_date">Meeting Date :</string>
+    <string name="meet_time">Meeting Time :</string>
+    <string name="meet_address">Address :</string>
+    <string name="meet_description">Description :</string>
+    <string name="meet_priority">Priority :</string>
+    <string name="saveBtn">Save</string>
+
+    <string name="priority_high">High</string>
+    <string name="priority_mid">Medium</string>
+    <string name="priority_low">Low</string>
+
+    <string-array name="priority_array">
+        <item>priority_high</item>
+        <item>priority_mid</item>
+        <item>priority_low</item>
+    </string-array>
 </resources>

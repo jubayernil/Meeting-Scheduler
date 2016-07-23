@@ -13,6 +13,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/row_time_tv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -21,6 +22,7 @@
             android:textColor="@color/colorBlack" />
 
         <TextView
+            android:id="@+id/row_remaining_time_tv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -38,6 +40,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/row_title_tv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -47,6 +50,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/row_description_tv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
